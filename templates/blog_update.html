@@ -1,7 +1,20 @@
-<form method='POST'>
-    {% csrf_token %}
-    title{{form.title}}
-    <br>
-    conten{{form.content}}
-    <button type='submit'>update</button>
-</form>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>template Django - Create blog</title>
+    </head>
+    <body>
+        <div>
+            <h1>Crear blog</h1>
+            <form method='POST'>
+                {% csrf_token %}
+                title{{form.title}}
+                <br>
+                conten{{form.content}}
+                <button type='submit'>update</button>
+            </form>
+        </div>
+    </body>
+</html>
