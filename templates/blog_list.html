@@ -6,10 +6,13 @@
         <title>template Django - blog list</title>
     </head>
     <body>
+        <h1>Blog list</h1>
         <div>
-            <h1>Blog list</h1>
+            {%for post in posts%}
+            <a href="{% url 'blog:detail' post.id %}">{{post.title}}</a>
+            <br>
+            {% endfor %}
         </div>
-        <br>
         <br>
         <a href="{% url 'blog:create' %}">pincha aqui para crear un blog<a/>
     </body>
