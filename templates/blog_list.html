@@ -11,9 +11,9 @@
             {%for post in posts%}
             <a href="{% url 'blog:detail' post.id %}">{{post.title}}</a>
             <a href="{% url 'blog:update' post.id%}">Update<a/>
+            <a href="{% url 'blog:delete' post.id%}">Delete<a/>
             <br>
             {% endfor %}
-            
         </div>
         <br>
         <a href="{% url 'blog:create' %}">pincha aqui para crear un blog<a/>

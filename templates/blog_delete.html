@@ -7,13 +7,11 @@
     </head>
     <body>
         <div>
-            <h1>Actualizar Blog</h1>
+            <h1>Borrar Post--> {{post.title}}</h1>
             <form method='POST'>
                 {% csrf_token %}
-                title{{form.title}}
-                <br>
-                conten{{form.content}}
-                <button type='submit'>update</button>
+                {{form}}
+                <button type='submit'>Borrar informacion</button>
             </form>
         </div>
     </body>
