@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>template Django - Create blog</title>
-    </head>
-    <body>
-        <div>
-            <h1>Borrar Post--> {{post.title}}</h1>
-            <form method='POST'>
-                {% csrf_token %}
-                {{form}}
-                <button type='submit'>Borrar informacion</button>
-            </form>
-        </div>
-    </body>
-</html>
+<body>
+     <div>
+         <h1>Borrar Post--> {{post.title}}</h1>
+         <form method='POST'>
+            {% csrf_token %}
+            {{form}}
+            <button type='submit'>Borrar informacion</button>
+         </form>
+     </div>
+ </body>

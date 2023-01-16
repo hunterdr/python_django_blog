@@ -1,14 +1,8 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>template Django</title>
-    </head>
-    <body>
-        <div>
-            <h1>HOME</h1>
-            <h2>Visita mi blog <spam></spam><a href="{% url 'blog:home' %}">Aqui</a></h2>
-        </div>
-    </body>
-</html>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    
+    <h1>HOME</h1>
+    <h2>Visita mi blog <spam></spam><a href="{% url 'blog:home' %}">Aqui</a></h2>
+    
+    {% endblock content %}
